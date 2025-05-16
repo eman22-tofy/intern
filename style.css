@@ -208,3 +208,88 @@ body {
     color: #ffffff;
     margin: 0;
 }
+/* الكود الأساسي كما هو أعلاه */
+
+/* ==== Media Queries for Responsiveness ==== */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    #navbar li {
+        padding: 10px 0;
+    }
+
+    #hero {
+        padding: 40px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    #hero h4 {
+        font-size: 20px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    .hero-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-container {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .product-card img {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    #header {
+        padding: 10px 20px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-card button {
+        padding: 8px 16px;
+    }
+}
